@@ -1,0 +1,16 @@
+version: '2'
+services:
+  gollum:
+    image: sarlos/gollum
+    ports:
+      - 80:80
+    volumes:
+      - wiki_data:/wiki
+    environment:
+      - TZ=Etc/UTC
+    build:
+      context: .
+
+volumes:
+  wiki_data:
+    driver: local
