@@ -4,4 +4,4 @@ if [ ! -d .git ]; then
   git init
 fi
 
-exec "$@"
+exec gollum "$@"
