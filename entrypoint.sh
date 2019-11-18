@@ -4,4 +4,4 @@ if [ ! -d .git ]; then
   git init
 fi
 
-exec gollum "$@"
+exec gollum --port=80 --adapter=rugged "$@"
