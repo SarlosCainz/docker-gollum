@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 RUN gem install gollum
-RUN gem install github-markdown gollum-rugged_adapter
+RUN gem install github-markdown gollum-rugged_adapter asciidoctor
 
 EXPOSE 80
 VOLUME /wiki
