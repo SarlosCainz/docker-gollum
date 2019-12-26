@@ -17,4 +17,4 @@ WORKDIR /wiki
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["--emoji", "--allow-uploads", "--show-all"]
+CMD ["--emoji", "--allow-uploads", "--show-all", "--css"]
