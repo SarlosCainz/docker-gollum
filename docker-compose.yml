@@ -8,7 +8,6 @@ services:
       - wiki_data:/wiki
     environment:
       - TZ=Etc/UTC
-      - PLANTUML_URL=http://10.161.213.241:8082/png
       - NO_EDIT=yes
     build:
       context: .
